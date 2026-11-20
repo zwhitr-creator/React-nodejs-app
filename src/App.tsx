@@ -24,8 +24,14 @@ function App() {
         <button
           type="button"
           className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
+          onClick={() => {
+            setCount((count) => count + 1)
+            console.log ("num",Math.random())
+            console.log('Hello From -- VS Code!');
+            }
+          }
+        
+            >
           Count is {count}
         </button>
       </section>
